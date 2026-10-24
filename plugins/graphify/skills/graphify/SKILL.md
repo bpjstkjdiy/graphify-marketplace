@@ -17,22 +17,22 @@ Run:
 graphify --version
 ```
 
-If the command is not found, install the pinned version. Try these in order and
+If the command is not found, install the latest 0.9.x version. Try these in order and
 stop at the first one that works:
 
 ```bash
-uv tool install "graphifyy==0.9.95"
-pipx install "graphifyy==0.9.95"
-pip install --break-system-packages "graphifyy==0.9.95"
-pip install "graphifyy==0.9.95"
+uv tool install --upgrade "graphifyy>=0.9.95,<1.0"
+pipx install --force "graphifyy>=0.9.95,<1.0"
+pip install --break-system-packages -U "graphifyy>=0.9.95,<1.0"
+pip install -U "graphifyy>=0.9.95,<1.0"
 ```
 
 The PyPI name is `graphifyy` (two y). The command is `graphify`.
 
 Extras, install only when the input needs them:
 
-- PDF: `pip install --break-system-packages "graphifyy[pdf]==0.9.95"`
-- Word/Excel: `pip install --break-system-packages "graphifyy[office]==0.9.95"`
+- PDF: `pip install --break-system-packages "graphifyy[pdf]>=0.9.95,<1.0"`
+- Word/Excel: `pip install --break-system-packages "graphifyy[office]>=0.9.95,<1.0"`
 
 If every install fails (no network to PyPI), tell the user plainly and stop.
 Do not rebuild Graphify by hand.
@@ -63,5 +63,5 @@ In a cloud session the user cannot see that folder, so send `graph.html` and
 ## Notes
 
 - Graphify is third-party software from Graphify-Labs (Apache-2.0), not Anthropic.
-- To upgrade, change the pinned version `0.9.95` in this file after checking the
-  release notes at https://github.com/Graphify-Labs/graphify/releases.
+- Auto-updates within 0.9.x on every new session. For 1.x, widen the range
+  after checking https://github.com/Graphify-Labs/graphify/releases.
