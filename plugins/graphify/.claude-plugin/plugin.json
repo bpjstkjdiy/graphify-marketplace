@@ -1,7 +1,7 @@
 {
   "name": "graphify",
   "description": "Turn a folder, repo, or set of documents into a knowledge graph with Graphify. Installs the graphifyy CLI on demand and follows its official skill.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "bpjstkjdiy"
   },
