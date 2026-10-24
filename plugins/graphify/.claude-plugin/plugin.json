@@ -1,0 +1,12 @@
+{
+  "name": "graphify",
+  "description": "Turn a folder, repo, or set of documents into a knowledge graph with Graphify. Installs the graphifyy CLI on demand and follows its official skill.",
+  "version": "1.0.0",
+  "author": {
+    "name": "bpjstkjdiy"
+  },
+  "homepage": "https://github.com/Graphify-Labs/graphify",
+  "repository": "https://github.com/Graphify-Labs/graphify",
+  "license": "Apache-2.0",
+  "keywords": ["knowledge-graph", "codebase", "graphify", "graphrag"]
+}
