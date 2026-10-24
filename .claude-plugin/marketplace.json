@@ -1,0 +1,24 @@
+{
+  "name": "graphify-marketplace",
+  "owner": {
+    "name": "bpjstkjdiy"
+  },
+  "metadata": {
+    "description": "Personal marketplace that wraps Graphify (Graphify-Labs) as a Claude plugin.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "graphify",
+      "source": "./plugins/graphify",
+      "description": "Turn a folder, repo, or set of documents into a knowledge graph with Graphify. Installs the graphifyy CLI on demand and follows its official skill.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Aditya Tindi Sawiji"
+      },
+      "homepage": "https://github.com/Graphify-Labs/graphify",
+      "license": "Apache-2.0",
+      "keywords": ["knowledge-graph", "codebase", "graphify", "graphrag"]
+    }
+  ]
+}
